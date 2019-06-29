@@ -1,0 +1,5 @@
+{
+    "MongoDB": {
+        "url": "mongodb://localhost/VidliTest"
+    }
+}

@@ -1,0 +1,7 @@
+{
+    "name":"Default Express App",
+    "SecretKey":"VIDSECRETKEY",
+    "MongoDB":{
+        "url":"mongodb://localhost/TestDB"
+    }
+}

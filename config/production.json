@@ -1,0 +1,11 @@
+{
+    "name":"My Production App",
+    "mail":{
+        "port":1234,
+        "server":"pod-mail-server",
+        "password":"APPDATA"
+    },
+    "MongoDB":{
+        "url":"mongodb://localhost/TestDB"
+    }
+}

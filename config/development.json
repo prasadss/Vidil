@@ -1,0 +1,14 @@
+{
+    "name":"My Development App",
+    "mail":{
+        "port":4567,
+        "server":"dev-mail-server",
+        "password":"APPDATA"
+    },
+    "MongoDB":{
+        "url":"mongodb://localhost/TestDB"
+    },
+    "Jwt":{
+        "secretKey":"VidilyApp"
+    }
+}
