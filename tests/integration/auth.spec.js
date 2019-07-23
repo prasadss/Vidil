@@ -7,11 +7,12 @@ describe('Auth Middleware',()=>{
         return  request(server).post('/api/genres').send({name:'genres1'}).set('x-auth-token',token);
     }
     beforeEach(() => {
+        process.env.VIDSECRETKEY="asd";
         server = require('../../app');
         token=new User().generateAuthToken();
     })
     afterEach(async () => {
-        server.close()
+        await server.close()
     });
     it('200 if valid token',async ()=>{
         const res=await exec();

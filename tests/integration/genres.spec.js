@@ -5,11 +5,12 @@ const { User } = require('../../models/user');
 let server;
 describe("/api/genres", () => {
     beforeEach(() => {
+        process.env.VIDSECRETKEY="asd";
         server = require('../../app');
     })
     afterEach(async () => {
         await Genre.remove({});
-        server.close()
+        await server.close()
     });
     describe('GET /', () => {
         it('should return all genres', async () => {
